@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành mảng</title>
+    <style>
+        body {
+            padding-top: 50px;}
+    </style>
+</head>
+
+<h1> LÊ THẾ BÌNHKK</h1>
+
+<body>
+<input type="text" id = "txtvaluae">
+<input type="button" id = "btnadd" value="add" onclick=" add_element_to_array();"/>
+<input type="button" id = "btndisplay" value="display" onclick="display_array();"/>
+<div id="result"></div>
+<script>
+    let x =0;
+    let array = [];
+    function add_element_to_array(){
+        array[x]=document.getElementById("txtvaluae").value;
+        alert("element:" + array[x] + "added at index"+ x);
+        x++;
+        document.getElementById("txtvaluae").value = "";
+    }
+    function display_array(){
+        let e ="<hr/>";
+        for(let i = 0;i<array.length;i++){
+            e += "element" +i+ "=" + array [i] + "<br/>"
+        }
+        document.getElementById("result").innerHTML=e;
+
+    }
+</script>
+
+
+</body>
+</html>
