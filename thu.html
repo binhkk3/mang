@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao ngược mang</title>
+</head>
+<h1> lê thế bìnhkk</h1>
+<h3>bài 1</h3>
+<body>
+<script>
+    let arr = [1, 4, 7, 2, 8, 12]
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + '<br>')
+    }
+    document.write('<h1>Bài 2</h1>')
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            document.write(arr[i] + '<br>')
+        }
+    }
+
+    document.write('<h3>bài 3</h3>')
+    let sum =0;
+    let j=0;
+    for(let i= 0;i<arr.length;i++){
+
+        if(arr[i] % 4=== 0){
+            j++;
+            sum = sum + arr[i]
+
+        }
+
+    }
+    let tb = sum / j
+    document.write(sum +'<br>');
+    document.write('bài 4')
+    document.write(j)
+    document.write('bai 4'+'<br>')
+    document.write(tb)
+
+</script>
+
+</body>
+</html>
